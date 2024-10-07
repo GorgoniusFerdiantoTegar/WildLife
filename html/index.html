@@ -3,38 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wildlife</title>
+    <title>WildLife</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../aset/paficon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <Header>
-        <div id="logo"></div>
-        <nav id="navigation">
-            <ul>
-                <li class="element-nav"><a href="#">Beranda</a></li>
-                <li class="element-nav"><a href="#">Tentang Kami</a></li>
-                <li class="element-nav"><a href="#">Kategori</a></li>
-                <li class="element-nav"><a href="#">FAQ'S</a></li>
-            </ul>
+    <Header class="navbar-container">
+        <div class="logo"><img src="../aset/logo-heading.png" alt=""></div>
+        <nav class="navbar-link">
+            <a href="#homepage">Beranda</a>
+            <a href="#container-about">Tentang Kami</a>
+            <a href="#main-content">Kategori</a>
+            <a href="#faqs">FAQ'S</a>
         </nav>
     </Header>
     <main>
-        <section id="hero-section">
+        <!-- homapage-content -->
+        <section id="homepage">
+            <h1>Explore the Wonders of the Animal Kingdom</h1>
+            <p>Pelajari lebih dalam tentang keindahan dan keajaiban fauna yang ada di seluruh penjuru dunia</p>
+            <form class="search" action="">
+                <input type="text" placeholder="Find what you're looking for">
+                <button>Search</button>
+            </form>
         </section>
-        <section id="about">
-        </section>
+
+        <!-- about-content -->
+         <section id="container-about">
+             <section class="about">
+                 <section class="about-content">
+                     <h2>Tentang <span class="wild-text">Wild</span><span class="life-text">Life</span></h2>
+                     <p>Website Wildlife adalah ensiklopedia online yang dirancang untuk mengedukasi dan menginspirasi pengunjung dengan mengeksplorasi keanekaragaman satwa liar di seluruh dunia. Situs ini berfungsi sebagai sumber daya yang informatif, menghadirkan berbagai kategori hewan seperti mamalia, burung, reptil, amfibi, dan lainnya. Setiap spesies memiliki deskripsi mendalam, fakta menarik, dan upaya konservasi yang sedang dilakukan untuk melindungi mereka.</p>
+                 </section>
+                 <section class="img-content">
+                     <img class="img-about" src="../aset/kategori2.jpg" alt="">
+                 </section>
+             </section>
+         </section>
+
+        <!-- categorize-content -->
         <article id="main-content">
-            <section class="container-post"></section>
-            <section class="container-post"></section>
-            <section class="container-post"></section>
-        </article>
-        <section id="faq's">
-            <section class="content-faq's1"></section>
-            <section class="content-faq's2"></section>
-            <section class="content-faq's3"></section>
+            <h2 class="title-main">Temukan Hewan Lainnya</h2> <!-- Mengubah penutup <h1> menjadi </h2> -->
+            <p class="content-main">Explorasi beragam spesies hewan yang menghuni berbagai ekosistem</p>
+        
+            <section class="container-post-categorize">
+                <!-- Post 1: Harimau Sumatra -->
+                <section class="container-post">
+                    <section class="post">
+                        <img src="../aset/categorize1.jpg" alt="Harimau Sumatra" class="img-post">
+                        <p class="content-post-categorize">Categorize</p>
+                        <h3 class="title-post">Harimau Sumatra</h3>
+                        <p class="content-post">Harimau Sumatra adalah subspesies harimau yang berasal dari pulau Sumatra, Indonesia. Ini adalah harimau terkecil di antara semua subspesies, kemungkinan karena berevolusi di habitat pulau yang terisolasi. Garis-garis pada tubuh Harimau Sumatra lebih rapat, dan bulunya memiliki warna oranye yang lebih gelap dibandingkan dengan subspesies lain, yang membantunya berkamuflase lebih baik di habitat hutan hujan tropis.</p>
+                    </section>
+                    <section class="post-footer">
+                        <a href="#" class="read-more">Read more</a>
+                    </section>
+                </section>
+        
+                <!-- Post 2: Orang Utan -->
+                <section class="container-post">
+                    <section class="post">
+                        <img src="../aset/categorize2.jpg" alt="Orang Utan" class="img-post">
+                        <p class="content-post-categorize">Categorize</p>
+                        <h3 class="title-post">Orang Utan</h3>
+                        <p class="content-post">Orang utan adalah kera besar yang berasal dari hutan hujan Indonesia dan Malaysia. Sekarang hewan ini hanya ditemukan di sebagian Kalimantan dan Sumatra, tetapi selama era Pleistosen, mereka tersebar di seluruh Asia Tenggara dan Tiongkok Selatan. Orang utan diklasifikasikan dalam genus Pongo dan awalnya dianggap hanya terdiri dari satu spesies. Sejak tahun 1996, orang utan dibagi menjadi dua spesies: orang utan kalimantan (P. pygmaeus, dengan tiga subspesies) dan orang utan sumatra (P. abelii).</p>
+                    </section>
+                    <section class="post-footer">
+                        <a href="#" class="read-more">Read more</a>
+                    </section>
+                </section>
+        
+                <!-- Post 3: Siamang -->
+                <section class="container-post">
+                    <section class="post">
+                        <img src="../aset/categorize3.jpg" alt="Siamang" class="img-post">
+                        <p class="content-post-categorize">Categorize</p>
+                        <h3 class="title-post">Siamang</h3>
+                        <p class="content-post">Owa Siamang (Symphalangus syndactylus) adalah kera hitam yang berlengan panjang, dan hidup pada pohon-pohon. Pada umumnya, siamang sangat tangkas saat bergerak di atas pohon, sehingga tidak ada predator yang bisa menangkap mereka. Siamang merupakan spesies terancam, karena deforestasi habitatnya cepat. Siamang tidak memiliki ekor dan memiliki postur tubuh yang kurang tegak. Siamang juga memiliki perkembangan otak yang tinggi. Siamang berwarna hitam agak cokelat kemerahan.</p>
+                    </section>
+                    <section class="post-footer">
+                        <a href="#" class="read-more">Read more</a>
+                    </section>
+                </section>
+            </section>
+            <section class="container-button">
+                <button class="button-categorize">View All</button>
+            </section>
+        </article>        
+
+        <!-- faq's -->
+        <section id="faqs">
+            <h2 class="faqs-title">FAQs</h2>
+            <p class="faqs-content">Periksa FAQ kami untuk informasi dan sumber yang berguna</p>
+            <section class="container-faq">
+                <section class="content-faq">
+                    <h4 class="title-content-faq">Apa itu Wildlife?</h4>
+                    <p >Wildlife adalah sebuah website yang menyediakan ensiklopedia lengkap tentang berbagai spesies hewan di seluruh dunia. Kami menawarkan informasi mendalam tentang habitat, perilaku, status konservasi, dan fakta menarik tentang hewan-hewan tersebut. Website ini juga dirancang untuk membantu Anda menjelajahi keanekaragaman fauna secara interaktif</p>
+                </section>
+                <section class="content-faq">
+                    <h4 class="title-content-faq"> Bagaimana cara mencari hewan di Wildlife?</h4>
+                    <p>Anda bisa menggunakan fitur search di bagian atas halaman utama untuk mencari hewan berdasarkan nama spesies, keluarga, atau kelompok hewan. Selain itu, Anda juga dapat menelusuri kategori hewan berdasarkan habitat atau jenisnya di halaman Kategori Hewan.</p>
+                </section>
+                <section class="content-faq">
+                    <h4 class="title-content-faq">Apakah saya bisa berkontribusi di Wildlife?</h4>
+                    <p>Saat ini, kontribusi langsung belum tersedia. Namun, Anda dapat bergabung dalam Forum Diskusi di mana Anda bisa berbagi pengalaman, menanyakan pertanyaan, atau memberikan masukan tentang spesies yang Anda ketahui. Kami sangat menghargai masukan dari komunitas pecinta hewan.</p>
+                </section>
+            </section>
         </section>
-        <section class="container-discusion">
+
+        <!-- discusion -->
+        <section class="discusion">
+            <section class="container-discusion">
+                <h2>Still have question ?</h2>
+                <p>Jangan ragu untuk bertanya! Tinggalkan komentar agar dapat berdiskusi tentang topik yang anda minati</p>
+                <button>Comment</button>
+            </section>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <img src="../aset/logo-removebg-preview.png" alt="">
+    </footer>
 </body>
 </html>
