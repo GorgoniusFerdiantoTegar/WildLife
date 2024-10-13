@@ -1,131 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WildLife</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../aset/paficon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-</head>
-<body>
-    <Header class="navbar-container">
-        <div class="logo"><img src="../aset/logo-heading.png" alt=""></div>
-        <nav class="navbar-link">
-            <a href="#homepage">Beranda</a>
-            <a href="#container-about">Tentang Kami</a>
-            <a href="#main-content">Kategori</a>
-            <a href="#faqs">FAQ'S</a>
-        </nav>
-    </Header>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../aset/paficon.png" />
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="logo">
+        <img src="../aset/logo-heading.png" alt="logo WildLife" />
+      </div>
+      <nav class="navbar-link">
+        <a href="#homepage">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#main-content">Hewan</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+      <div class="menu-icon-responsive">
+        <i data-feather="menu"></i>
+      </div>
+    </header>
     <main>
-        <!-- homapage-content -->
-        <section id="homepage">
-            <h1>Explore the Wonders of the Animal Kingdom</h1>
-            <p>Pelajari lebih dalam tentang keindahan dan keajaiban fauna yang ada di seluruh penjuru dunia</p>
-            <form class="search" action="">
-                <input type="text" placeholder="Find what you're looking for">
-                <button>Search</button>
-            </form>
+      <!-- homapage-content -->
+      <section id="homepage" class="hero-section">
+        <video class="video-bg" src="../aset/video-bg-final1.mp4" autoplay muted loop></video>
+        <h1>Explore the Wonders of the Animal Kingdom</h1>
+        <p>
+          Pelajari lebih dalam tentang keindahan dan keajaiban fauna yang ada di
+          seluruh penjuru dunia
+        </p>
+        <form class="search" action="">
+          <input type="text" placeholder="Find what you're looking for" />
+          <button>
+            <i data-feather="search"></i>
+          </button>
+        </form>
+      </section>
+
+      <!-- about-content -->
+      <section id="about" class="about">
+        <section class="about-content">
+          <h2>Tentang Wild Life</h2>
+          <p>
+            Wildlife adalah ensiklopedia online yang dirancang untuk mengedukasi
+            dan menginspirasi pengunjung dengan mengeksplorasi keanekaragaman
+            satwa liar di seluruh dunia.
+          </p>
+          <br />
+          <p>
+            Situs ini berfungsi sebagai sumber daya yang informatif,
+            menghadirkan berbagai kategori hewan seperti mamalia, burung,
+            reptil, amfibi, dan lainnya. Setiap spesies memiliki deskripsi
+            mendalam, fakta menarik, dan upaya konservasi yang sedang dilakukan
+            untuk melindungi mereka.
+          </p>
         </section>
-
-        <!-- about-content -->
-         <section id="container-about">
-             <section class="about">
-                 <section class="about-content">
-                     <h2>Tentang <span class="wild-text">Wild</span><span class="life-text">Life</span></h2>
-                     <p>Website Wildlife adalah ensiklopedia online yang dirancang untuk mengedukasi dan menginspirasi pengunjung dengan mengeksplorasi keanekaragaman satwa liar di seluruh dunia. Situs ini berfungsi sebagai sumber daya yang informatif, menghadirkan berbagai kategori hewan seperti mamalia, burung, reptil, amfibi, dan lainnya. Setiap spesies memiliki deskripsi mendalam, fakta menarik, dan upaya konservasi yang sedang dilakukan untuk melindungi mereka.</p>
-                 </section>
-                 <section class="img-content">
-                     <img class="img-about" src="../aset/kategori2.jpg" alt="">
-                 </section>
-             </section>
-         </section>
-
-        <!-- categorize-content -->
-        <article id="main-content">
-            <h2 class="title-main">Temukan Hewan Lainnya</h2> <!-- Mengubah penutup <h1> menjadi </h2> -->
-            <p class="content-main">Explorasi beragam spesies hewan yang menghuni berbagai ekosistem</p>
-        
-            <section class="container-post-categorize">
-                <!-- Post 1: Harimau Sumatra -->
-                <section class="container-post">
-                    <section class="post">
-                        <img src="../aset/categorize1.jpg" alt="Harimau Sumatra" class="img-post">
-                        <p class="content-post-categorize">Categorize</p>
-                        <h3 class="title-post">Harimau Sumatra</h3>
-                        <p class="content-post">Harimau Sumatra adalah subspesies harimau yang berasal dari pulau Sumatra, Indonesia. Ini adalah harimau terkecil di antara semua subspesies, kemungkinan karena berevolusi di habitat pulau yang terisolasi. Garis-garis pada tubuh Harimau Sumatra lebih rapat, dan bulunya memiliki warna oranye yang lebih gelap dibandingkan dengan subspesies lain, yang membantunya berkamuflase lebih baik di habitat hutan hujan tropis.</p>
-                    </section>
-                    <section class="post-footer">
-                        <a href="#" class="read-more">Read more</a>
-                    </section>
-                </section>
-        
-                <!-- Post 2: Orang Utan -->
-                <section class="container-post">
-                    <section class="post">
-                        <img src="../aset/categorize2.jpg" alt="Orang Utan" class="img-post">
-                        <p class="content-post-categorize">Categorize</p>
-                        <h3 class="title-post">Orang Utan</h3>
-                        <p class="content-post">Orang utan adalah kera besar yang berasal dari hutan hujan Indonesia dan Malaysia. Sekarang hewan ini hanya ditemukan di sebagian Kalimantan dan Sumatra, tetapi selama era Pleistosen, mereka tersebar di seluruh Asia Tenggara dan Tiongkok Selatan. Orang utan diklasifikasikan dalam genus Pongo dan awalnya dianggap hanya terdiri dari satu spesies. Sejak tahun 1996, orang utan dibagi menjadi dua spesies: orang utan kalimantan (P. pygmaeus, dengan tiga subspesies) dan orang utan sumatra (P. abelii).</p>
-                    </section>
-                    <section class="post-footer">
-                        <a href="#" class="read-more">Read more</a>
-                    </section>
-                </section>
-        
-                <!-- Post 3: Siamang -->
-                <section class="container-post">
-                    <section class="post">
-                        <img src="../aset/categorize3.jpg" alt="Siamang" class="img-post">
-                        <p class="content-post-categorize">Categorize</p>
-                        <h3 class="title-post">Siamang</h3>
-                        <p class="content-post">Owa Siamang (Symphalangus syndactylus) adalah kera hitam yang berlengan panjang, dan hidup pada pohon-pohon. Pada umumnya, siamang sangat tangkas saat bergerak di atas pohon, sehingga tidak ada predator yang bisa menangkap mereka. Siamang merupakan spesies terancam, karena deforestasi habitatnya cepat. Siamang tidak memiliki ekor dan memiliki postur tubuh yang kurang tegak. Siamang juga memiliki perkembangan otak yang tinggi. Siamang berwarna hitam agak cokelat kemerahan.</p>
-                    </section>
-                    <section class="post-footer">
-                        <a href="#" class="read-more">Read more</a>
-                    </section>
-                </section>
-            </section>
-            <section class="container-button">
-                <button class="button-categorize">View All</button>
-            </section>
-        </article>        
-
-        <!-- faq's -->
-        <section id="faqs">
-            <h2 class="faqs-title">FAQs</h2>
-            <p class="faqs-content">Periksa FAQ kami untuk informasi dan sumber yang berguna</p>
-            <section class="container-faq">
-                <section class="content-faq">
-                    <h4 class="title-content-faq">Apa itu Wildlife?</h4>
-                    <p >Wildlife adalah sebuah website yang menyediakan ensiklopedia lengkap tentang berbagai spesies hewan di seluruh dunia. Kami menawarkan informasi mendalam tentang habitat, perilaku, status konservasi, dan fakta menarik tentang hewan-hewan tersebut. Website ini juga dirancang untuk membantu Anda menjelajahi keanekaragaman fauna secara interaktif</p>
-                </section>
-                <section class="content-faq">
-                    <h4 class="title-content-faq"> Bagaimana cara mencari hewan di Wildlife?</h4>
-                    <p>Anda bisa menggunakan fitur search di bagian atas halaman utama untuk mencari hewan berdasarkan nama spesies, keluarga, atau kelompok hewan. Selain itu, Anda juga dapat menelusuri kategori hewan berdasarkan habitat atau jenisnya di halaman Kategori Hewan.</p>
-                </section>
-                <section class="content-faq">
-                    <h4 class="title-content-faq">Apakah saya bisa berkontribusi di Wildlife?</h4>
-                    <p>Saat ini, kontribusi langsung belum tersedia. Namun, Anda dapat bergabung dalam Forum Diskusi di mana Anda bisa berbagi pengalaman, menanyakan pertanyaan, atau memberikan masukan tentang spesies yang Anda ketahui. Kami sangat menghargai masukan dari komunitas pecinta hewan.</p>
-                </section>
-            </section>
+        <section class="img-content">
+          <img class="img-about group" src="../aset/Group About.png" alt="" />
+          <div class="responsive-img">
+            <img class="gbr" src="../aset/about-content2.jpg" alt="" />
+            <img class="gbr" src="../aset/categorize1.jpg" alt="" />
+            <img class="gbr" src="../aset/categorize2.jpg" alt="" />
+            <img class="gbr" src="../aset/about-content.jpg" alt="" />
+          </div>
         </section>
+      </section>
 
-        <!-- discusion -->
-        <section class="discusion">
-            <section class="container-discusion">
-                <h2>Still have question ?</h2>
-                <p>Jangan ragu untuk bertanya! Tinggalkan komentar agar dapat berdiskusi tentang topik yang anda minati</p>
-                <button>Comment</button>
-            </section>
-        </section>
+      <!-- filter-content -->
+      <section id="main-content" class="main-content">
+        <h2 class="main-headline">Temukan Hewan Lainnya</h2>
+        <p class="main-subline">
+          Explorasi beragam spesies hewan yang menghuni berbagai ekosistem
+        </p>
+        <div class="container-button-filter">
+          <button class="filter-btn"><span>All</span></button>
+          <button class="filter-btn"><span>Mamalia</span></button>
+          <button class="filter-btn"><span>Aves</span></button>
+          <button class="filter-btn"><span>Pisces</span></button>
+          <button class="filter-btn"><span>Amfibi</span></button>
+          <button class="filter-btn"><span>Reptilia</span></button>
+          <button class="filter-btn"><span>Invertebrata</span></button>
+        </div>
+        <div class="container-post">
+          <!-- Post 1: Harimau Sumatra -->
+          <section class="post">
+            <a
+              href="https://www.nationalgeographic.com/animals/mammals/facts/sumatran-tiger"
+              class="AnchorLink-Background"
+              target="blank"
+            ></a>
+            <img src="../aset/categorize1.jpg" alt="Harimau Sumatra" />
+            <div class="description-content">
+              <p class="categorize">Mamalia</p>
+              <h3 class="post-title">Harimau Sumatra</h3>
+              <p class="post-content">
+                Harimau Sumatra (Panthera tigris sumatrae) merupakan subspesies
+                harimau terkecil, asli dari Pulau Sumatra, Indonesia.
+              </p>
+              <div class="read-more">
+                <span>read more</span><i data-feather="chevron-down"></i>
+              </div>
+            </div>
+          </section>
+
+          <!-- Post 2: Orang Utan -->
+          <section class="post">
+            <a
+              href="https://www.nationalgeographic.com/animals/mammals/facts/orangutans"
+              class="AnchorLink-Background"
+              target="blank"
+            ></a>
+            <img src="../aset/categorize2.jpg" alt="Orang Utan" />
+            <div class="description-content">
+              <p class="categorize">Mamalia</p>
+              <h3 class="post-title">Orang Utan</h3>
+              <p class="post-content">
+                Orang utan adalah kera besar yang hidup di hutan hujan
+                Kalimantan dan Sumatra, Indonesia serta Malaysia.
+              </p>
+              <div class="read-more">
+                <span>read more</span><i data-feather="chevron-down"></i>
+              </div>
+            </div>
+          </section>
+
+          <!-- Post 3: Siamang -->
+          <section class="post">
+            <a
+              href="https://www.nationalgeographic.com/animals/mammals/facts/gibbons"
+              class="AnchorLink-Background"
+              target="blank"
+            ></a>
+            <img src="../aset/categorize3.jpg" alt="Siamang" />
+            <div class="description-content">
+              <p class="categorize">Mamalia</p>
+              <h3 class="post-title">Siamang</h3>
+              <p class="post-content">
+                Owa Siamang (Symphalangus syndactylus) adalah kera hitam
+                berlengan panjang yang ahli bergerak di atas pohon.
+              </p>
+              <div class="read-more">
+                <span>read more</span><i data-feather="chevron-down"></i>
+              </div>
+            </div>
+          </section>
+
+          <!-- Post 4: Shoel Bill -->
+          <section class="post">
+            <a
+              href="https://www.nationalgeographic.com/animals/birds/facts/shoebill"
+              class="AnchorLink-Background"
+              target="blank"
+            ></a>
+            <img src="../aset/shoebill-bird.jpg" alt="shoebill bird" />
+            <div class="description-content">
+              <p class="categorize">Aves</p>
+              <h3 class="post-title">Shoebill</h3>
+              <p class="post-content">
+                Shoebill adalah burung besar dari Afrika Timur dengan paruh
+                sepanjang satu kaki yang menyerupai bakiak Belanda.
+              </p>
+              <div class="read-more">
+                <span>read more</span><i data-feather="chevron-down"></i>
+              </div>
+            </div>
+          </section>
+
+          <!-- Post 5: Suriname-toad -->
+          <section class="post">
+            <a
+              href="https://www.nationalgeographic.com/animals/amphibians/facts/surinam-toad"
+              class="AnchorLink-Background"
+              target="blank"
+            ></a>
+            <img src="../aset/suriname-toad.jpg" alt="suriname-toad" />
+            <div class="description-content">
+              <p class="categorize">Amfibi</p>
+              <h3 class="post-title">Katak Suriname</h3>
+              <p class="post-content">
+                Katak Surinam memiliki bentuk datar dan kepala segitiga dengan
+                mata kecil tanpa kelopak, serta melahirkan anak-anaknya melalui
+                lubang-lubang di punggungnya
+              </p>
+              <div class="read-more">
+                <span>read more</span><i data-feather="chevron-down"></i>
+              </div>
+            </div>
+          </section>
+
+          <!-- Post 6: Great-White-Shark -->
+          <section class="post">
+            <a
+              href="https://www.nationalgeographic.com/animals/fish/facts/great-white-shark"
+              class="AnchorLink-Background"
+              target="blank"
+            ></a>
+            <img src="../aset/great-white-shark.jpg" alt="Great-White-Shark" />
+            <div class="description-content">
+              <p class="categorize">Pisces</p>
+              <h3 class="post-title">Hiu Putih</h3>
+              <p class="post-content">
+                ikan predator dari keluarga Lamnidae, dikenal karena perutnya
+                yang berwarna putih dan kemampuannya berbaur dengan lingkungan
+                melalui kontras warna tubuh.
+              </p>
+              <div class="read-more">
+                <span>read more</span><i data-feather="chevron-down"></i>
+              </div>
+            </div>
+          </section>
+
+          <!-- Post 7: Veiled chameleon -->
+          <section class="post">
+            <a
+              href="https://www.nationalgeographic.com/animals/reptiles/facts/veiled-chameleon"
+              class="AnchorLink-Background"
+              target="blank"
+            ></a>
+            <img src="../aset/veiled-chameleon.avif" alt="Veiled chameleon" />
+            <div class="description-content">
+              <p class="categorize">Reptilia</p>
+              <h3 class="post-title">Veiled Chameleon</h3>
+              <p class="post-content">
+                Veiled chameleon memiliki tonjolan kepala untuk menyalurkan air
+                dan merupakan pemakan serangga yang hidup di pohon-pohon di
+                Saudi Arabia dan Yaman.
+              </p>
+              <div class="read-more">
+                <span>read more</span><i data-feather="chevron-down"></i>
+              </div>
+            </div>
+          </section>
+        </div>
+        <button class="button-view"><span>View All</span></button>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery" class="gallery">
+        <header class="header-gallery">
+          <h2>Gallery</h2>
+        </header>
+        <p>
+          Koleksi beragam foto dari berbagai spesies hewan dari seluruh penjuru
+          bumi
+        </p>
+        <div class="container-img">
+          <div class="ctn-img container-left">
+            <img src="../aset/shark.jpg" alt="Hiu" />
+            <img src="../aset/crocodile.jpg" alt="Buaya" />
+            <img src="../aset/veiled-chameleon.avif" alt="Veiled-Chameleon" />
+          </div>
+          <div class="ctn-img container-center">
+            <img src="../aset/koala.jpg" alt="Koala" />
+            <img src="../aset/panda.jpg" alt="Panda" />
+            <img src="../aset/kategori.jpg" alt="Zebra" />
+            <img src="../aset/homepage.jpg" alt="Beruang" />
+            <img src="../aset/categorize1.jpg" alt="Harimau" />
+          </div>
+          <div class="ctn-img container-right">
+            <img src="../aset/rubah.jpg" alt="rubah" />
+            <img src="../aset/about-content.jpg" alt="Sapi" />
+            <img src="../aset/ikan-cupang.jpg" alt="Cupang" />
+          </div>
+        </div>
+        <button class="btn-load-img"><span>More</span></button>
+      </section>
     </main>
     <footer>
-        <img src="../aset/logo-removebg-preview.png" alt="">
+      <div class="footer-logo">
+        <img src="../aset/logo-removebg-preview.png" alt="" />
+      </div>
+      <div class="container-follow-us">
+        <p>Follow us</p>
+        <div class="container-icon">
+          <a href="">
+            <div class="icon">
+              <i data-feather="youtube"></i>
+            </div>
+          </a>
+          <a href="">
+            <div class="icon">
+              <i data-feather="instagram"></i>
+            </div>
+          </a>
+          <a href="">
+            <div class="icon">
+              <i data-feather="twitter"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Wildlife. All Rights Reserved.</p>
+      </div>
     </footer>
-</body>
+
+    <!-- feather icon -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
